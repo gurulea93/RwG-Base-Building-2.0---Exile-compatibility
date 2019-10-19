@@ -1,5 +1,5 @@
 	
-## This addon is WIP so bugs can appear. You can contact me on discord AeoG | El'Rabito#5701
+# This addon is WIP so bugs can appear. You can contact me on discord AeoG | El'Rabito#5701
 
 
 ## 1>> Add these four overrides to class CfgExileCustomCode of your Exile config.cpp in your missionfile.
