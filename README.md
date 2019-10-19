@@ -1,10 +1,9 @@
 RwG Base Building 2.0 - Exile compatibility
 
 # Add the stuff below to the class CfgTerritories of your Exile config.cpp in your missionfile.
-	
-	
-	
-	//
+
+
+//
 	// It's important to add every class-name of the upgradable base building elements used on the server, otherwise the object will be invisible and corrupted in the database or it doesn't remove the Updgradekit form inventory. 
 	//
 	// Add all object class-names which are upgraded with the Exile FortificationUpgrade to the array below.
@@ -42,6 +41,5 @@ RwG Base Building 2.0 - Exile compatibility
 		"RwG_ReInforced_FloorPort_Static"
 
 	};
-};
 	
-
+};
