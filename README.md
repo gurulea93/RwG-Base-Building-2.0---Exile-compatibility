@@ -78,8 +78,9 @@ Preview video - https://www.youtube.com/watch?v=QNVqeeyM6js
 	
 	SQL1_INPUTS = 1,2
 
-## 3>> If you use enhanced movement i would blacklist the doors/Window and the woodgrind,
-otherwise you can open them with enhanced interaction. (Put it like in the example below to your initplayerloca.sqf. 
+## 4>> If you use Enhanced Movement i would blacklist the doors/Window and the woodgrid,
+otherwise you can open them with enhanced interaction or climb through the woodgrid element. 
+(Put it like in the example below to your initplayerloca.sqf. 
 
 	EM_blacklist_obj =
 	[
