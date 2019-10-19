@@ -1,4 +1,12 @@
 Add the stuff below to the class CfgTerritories of your Exile config.cpp in your missionfile.
+
+Add these four overrides to class CfgExileCustomCode.
+
+ExileClient_object_construction_upgradeShow = "RwG\ExileClient_object_construction_upgradeShow.sqf";
+ExileServer_object_construction_network_upgradeConstructionRequest = "RwG\ExileServer_object_construction_network_upgradeConstructionRequest.sqf";
+ExileClient_object_construction_network_upgradeConstructionResponse = "RwG\ExileClient_object_construction_network_upgradeConstructionResponse.sqf";
+ExileClient_object_construction_upgrade = "RwG\ExileClient_object_construction_upgrade.sqf";
+
 	
 	//
 	// It's important to add every class-name of the upgradable base building elements used on the server, otherwise the object will be invisible and corrupted in the database or it doesn't remove the Updgradekit form inventory. 
