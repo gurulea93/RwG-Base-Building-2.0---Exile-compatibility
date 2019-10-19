@@ -80,7 +80,7 @@ Preview video - https://www.youtube.com/watch?v=QNVqeeyM6js
 
 ## 4>> If you use Enhanced Movement i would blacklist the doors/Window and the woodgrid,
 otherwise you can open them with enhanced interaction or climb through the woodgrid element. 
-(Put it like in the example below to your initplayerloca.sqf. 
+(Put it like in the example below to your initplayerlocal.sqf. 
 
 	EM_blacklist_obj =
 	[
