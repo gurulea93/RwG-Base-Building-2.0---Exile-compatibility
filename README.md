@@ -1,13 +1,15 @@
+	
+
 ## Add these four overrides to class CfgExileCustomCode.
 
-class CfgExileCustomCode 
-{
-	ExileClient_object_construction_upgradeShow = "RwG\ExileClient_object_construction_upgradeShow.sqf";
-	ExileServer_object_construction_network_upgradeConstructionRequest = "RwG\ExileServer_object_construction_network_upgradeConstructionRequest.sqf";
-	ExileClient_object_construction_network_upgradeConstructionResponse = "RwG\ExileClient_object_construction_network_upgradeConstructionResponse.sqf";
-	ExileClient_object_construction_upgrade = "RwG\ExileClient_object_construction_upgrade.sqf";
-
-};
+	class CfgExileCustomCode 
+	{
+		ExileClient_object_construction_upgradeShow = "RwG\ExileClient_object_construction_upgradeShow.sqf";
+		ExileServer_object_construction_network_upgradeConstructionRequest = "RwG\ExileServer_object_construction_network_upgradeConstructionRequest.sqf";
+		ExileClient_object_construction_network_upgradeConstructionResponse = "RwG\ExileClient_object_construction_network_upgradeConstructionResponse.sqf";
+		ExileClient_object_construction_upgrade = "RwG\ExileClient_object_construction_upgrade.sqf";
+	
+	};
 
 	
 	
