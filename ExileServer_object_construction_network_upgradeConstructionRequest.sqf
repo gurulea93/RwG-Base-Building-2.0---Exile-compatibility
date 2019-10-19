@@ -104,7 +104,7 @@ try
 	else
 	{
 		deleteVehicle _object;
-		format ["upgradeObject_Wood:%1:%2",_objectClassRWG,_objectDatabaseID] call ExileServer_system_database_query_fireAndForget;
+		format ["upgradeObject:%1:%2",_objectClassRWG,_objectDatabaseID] call ExileServer_system_database_query_fireAndForget;
 		_newObject = createVehicle [_objectClassRWG,_position,[],0,"CAN_COLLIDE"];
 	};
 	
