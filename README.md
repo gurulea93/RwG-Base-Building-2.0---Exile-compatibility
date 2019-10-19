@@ -60,3 +60,14 @@ You can contact me on discord (AeoG | El'Rabito#5701)
 
 	};
 	
+## 3>> Add this to the extDB3 - exile.ini
+
+	
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;  RWG Base building 2.0
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	
+	[upgradeObject_Wood]
+	SQL1_1 = UPDATE construction SET class = ?, last_updated_at = NOW() WHERE id = ?
+	
+	SQL1_INPUTS = 1,2
