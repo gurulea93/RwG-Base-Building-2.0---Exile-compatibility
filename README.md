@@ -77,3 +77,12 @@ Preview video - https://www.youtube.com/watch?v=QNVqeeyM6js
 	SQL1_1 = UPDATE construction SET class = ?, last_updated_at = NOW() WHERE id = ?
 	
 	SQL1_INPUTS = 1,2
+
+## 3>> If you use enhanced movement i would blacklist the doors/Window and the woodgrind,
+otherwise you can open them with enhanced interaction. (Put it like in the example below to your initplayerloca.sqf. 
+
+	EM_blacklist_obj =
+	[
+	    "RwG_WoodGrid_Wall_Static",
+	    "RwG_GridWood_Door_Static"
+	];
