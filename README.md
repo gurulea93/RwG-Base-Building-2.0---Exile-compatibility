@@ -26,9 +26,10 @@ Preview video - https://www.youtube.com/watch?v=QNVqeeyM6js
 ## (NOT ALL CLASSNAMES INCLUDED, YOU HAVE TO ADD THEM MANUALLY OR WAIT TILL WE UPDATE IT)
 	
 	//
-	// It's important to add every class-name of the upgradable base building elements used on the server, otherwise the object will be invisible and corrupted in the database or it doesn't remove the Updgradekit form inventory. 
+	// It's important to add every class-name of the base building elements used on the server, 
+	// otherwise the object will be invisible and corrupted in the database or it doesn't remove the Updgradekit from inventory. 
 	//
-	// Add all object class-names which are upgraded with the Exile FortificationUpgrade to the array below.
+	// Add all object class-names which can be upgraded with the Exile FortificationUpgrade to the array below.
 	UpgradeWithDefaultKit[] = 
 	{
 		//Exile
@@ -46,7 +47,8 @@ Preview video - https://www.youtube.com/watch?v=QNVqeeyM6js
 		"RwG_Wood_Floor_Static",
 		"RwG_Wood_FloorPort_Static"
 	};
-	// Add all class-names of objects upgraded with the Exile FortificationUpgrade to the array below. (Needed to remove the proper Upgradekit from player inventory).
+	// Add all class-names of upgraded objects with the Exile FortificationUpgrade to the array below. 
+	// (Needed to remove the proper Upgradekit from player inventory).
 	RemoveDefaultKit[] = 
 	{
 		//Exile
