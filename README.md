@@ -1,6 +1,6 @@
 	
 
-## Add these four overrides to class CfgExileCustomCode.
+## Add these four overrides to class CfgExileCustomCode of your Exile config.cpp in your missionfile.
 
 	class CfgExileCustomCode 
 	{
