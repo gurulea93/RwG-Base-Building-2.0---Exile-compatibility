@@ -4,6 +4,8 @@ You can contact me on discord (AeoG | El'Rabito#5701)
 
 Feel free to contribute to make the code better (My skills are limited, so this is the best i could do).
 
+Preview video - https://www.youtube.com/watch?v=QNVqeeyM6js
+
 
 ## 1>> Add these four overrides to class CfgExileCustomCode of your Exile config.cpp in your missionfile.
 
