@@ -38,5 +38,3 @@ Add the stuff below to the class CfgTerritories of your Exile config.cpp in your
 		"RwG_ReInforced_FloorPort_Static"
 
 	};
-	
-};
