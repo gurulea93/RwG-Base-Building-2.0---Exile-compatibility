@@ -66,19 +66,7 @@ Preview video - https://www.youtube.com/watch?v=QNVqeeyM6js
 
 	};
 	
-## 3>> Add this to the extDB3 - exile.ini
-
-	
-	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-	;;  RWG Base building 2.0
-	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-	
-	[upgradeObject_Wood]
-	SQL1_1 = UPDATE construction SET class = ?, last_updated_at = NOW() WHERE id = ?
-	
-	SQL1_INPUTS = 1,2
-
-## 4>> If you use Enhanced Movement i would blacklist the doors/Window and the woodgrid,
+## 3>> If you use Enhanced Movement i would blacklist the doors/Window and the woodgrid,
 otherwise you can open them with enhanced interaction or climb through the woodgrid element. 
 (Put it like in the example below to your initplayerlocal.sqf. 
 
