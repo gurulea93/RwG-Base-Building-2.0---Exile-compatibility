@@ -55,7 +55,7 @@ RwG Basebuilding 2.0 addon - https://steamcommunity.com/sharedfiles/filedetails/
 		"RwG_Wood_Door_nLock_nWin_Static",
 		"RwG_Wood_Door_nLock_Win_Static",
 		"RwG_Wood_Door_Lock_nWin_Static",
-		"RwG_Wood_Door_Lock_Win_Static",
+		"RwG_Wood_Door_Lock_Win_Static", 
 		"RwG_Wood_Gate_Swing_Static",
 		"RwG_Wood_DoubleGate_Swing_Static",
 		"RwG_Wood_Floor_Static",
@@ -67,6 +67,18 @@ RwG Basebuilding 2.0 addon - https://steamcommunity.com/sharedfiles/filedetails/
 	{
 		//Exile
 		"Exile_Construction_WoodWall_Reinforced_Static",
+		"Exile_Construction_WoodWindow_Reinforced_Static",
+		"Exile_Construction_WoodWallHalf_Reinforced_Static",
+		"Exile_Construction_WoodDoorway_Reinforced_Static",
+		"Exile_Construction_WoodDoor_Reinforced_Static",
+		"Exile_Construction_WoodFloor_Reinforced_Static",
+		"Exile_Construction_WoodFloorPort_Reinforced_Static",
+		"Exile_Construction_WoodFloorPortSmall_Reinforced_Static",
+		"Exile_Construction_WoodGate_Reinforced_Static",
+		"Exile_Construction_WoodDrawBridge_Reinforced_Static",
+		"Exile_Construction_WoodLadderHatch_Reinforced_Static",
+		"Exile_Construction_ConcreteWindowHatch_Static",
+		"Exile_Construction_ConcreteFloorHatch_Static",
 		//RwG
 		"RwG_ReInforced_Wall_Static",
 		"RwG_ReInforced_Window_TipUp_Static",
