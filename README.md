@@ -36,8 +36,21 @@ RwG Basebuilding 2.0 addon - https://steamcommunity.com/sharedfiles/filedetails/
 	{
 		//Exile
 		"Exile_Construction_WoodWall_Static",
+		"Exile_Construction_WoodWallHalf_Static",
+		"Exile_Construction_WoodDoorway_Static",
+		"Exile_Construction_WoodGate_Static",
+		"Exile_Construction_WoodWindow_Static",
+		"Exile_Construction_WoodFloor_Static",
+		"Exile_Construction_WoodFloorPort_Static",
+		"Exile_Construction_WoodFloorPortSmall_Static",
+		"Exile_Construction_WoodLadderHatch_Static",
+		"Exile_Construction_WoodDoor_Static",
+		"Exile_Construction_WoodDrawBridge_Static",
+		"Exile_Construction_ConcreteFloorPort_Static",
+		"Exile_Construction_ConcreteWindow_Static",
 		//RwG
 		"RwG_Wood_Wall_Static",
+		"RwG_Wood_Window_TipUp_Static",
 		"RwG_Wood_Doorway_Static",
 		"RwG_Wood_Door_nLock_nWin_Static",
 		"RwG_Wood_Door_nLock_Win_Static",
@@ -45,7 +58,6 @@ RwG Basebuilding 2.0 addon - https://steamcommunity.com/sharedfiles/filedetails/
 		"RwG_Wood_Door_Lock_Win_Static",
 		"RwG_Wood_Gate_Swing_Static",
 		"RwG_Wood_DoubleGate_Swing_Static",
-		"RwG_Wood_Window_TipUp_Static",
 		"RwG_Wood_Floor_Static",
 		"RwG_Wood_FloorPort_Static"
 	};
@@ -57,12 +69,14 @@ RwG Basebuilding 2.0 addon - https://steamcommunity.com/sharedfiles/filedetails/
 		"Exile_Construction_WoodWall_Reinforced_Static",
 		//RwG
 		"RwG_ReInforced_Wall_Static",
+		"RwG_ReInforced_Window_TipUp_Static",
 		"RwG_ReInforced_Doorway_Static",
 		"RwG_ReInforced_Door_nLock_nWin_Static",
 		"RwG_ReInforced_Door_nLock_Win_Static",
 		"RwG_ReInforced_Door_Lock_nWin_Static",
 		"RwG_ReInforced_Door_Lock_Win_Static",
 		"RwG_ReInforced_Gate_Swing_Static",
+		"RwG_ReInforced_DoubleGate_Swing_Static",
 		"RwG_ReInforced_Floor_Static",
 		"RwG_ReInforced_FloorPort_Static"
 
