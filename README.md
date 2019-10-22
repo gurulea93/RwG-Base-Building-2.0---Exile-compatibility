@@ -111,7 +111,8 @@ RwG Basebuilding 2.0 addon - https://steamcommunity.com/sharedfiles/filedetails/
 	};
 	
 ## 3>> If you use Enhanced Movement i would blacklist the doors/Window and the woodgrid,
-otherwise you can open them with Enhanced Interaction or climb through the grid elementS. 
+otherwise you can open them with Enhanced Interaction or climb through the grid elements. 
+
 (Put it like in the example below to your initplayerlocal.sqf. 
 
 	EM_blacklist_obj =
