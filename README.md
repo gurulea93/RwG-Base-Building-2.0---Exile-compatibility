@@ -4,7 +4,8 @@ You can contact me on discord (AeoG | El'Rabito#5701)
 
 Feel free to contribute to make the code better (My skills are limited, so this is the best i could do).
 
-Preview video - https://www.youtube.com/watch?v=QNVqeeyM6js
+Preview video 1 - https://www.youtube.com/watch?v=QNVqeeyM6js
+Preview video 2 - https://www.youtube.com/watch?v=AM1ZIhsSpBA
 
 RwG Basebuilding 2.0 addon - https://steamcommunity.com/sharedfiles/filedetails/?id=1892860855
 
@@ -40,6 +41,7 @@ RwG Basebuilding 2.0 addon - https://steamcommunity.com/sharedfiles/filedetails/
 		"Exile_Construction_WoodDoorway_Static",
 		"Exile_Construction_WoodGate_Static",
 		"Exile_Construction_WoodWindow_Static",
+		"RwG_Wood_Window_Grid_Static",
 		"Exile_Construction_WoodFloor_Static",
 		"Exile_Construction_WoodFloorPort_Static",
 		"Exile_Construction_WoodFloorPortSmall_Static",
@@ -50,6 +52,7 @@ RwG Basebuilding 2.0 addon - https://steamcommunity.com/sharedfiles/filedetails/
 		"Exile_Construction_ConcreteWindow_Static",
 		//RwG
 		"RwG_Wood_Wall_Static",
+		"RwG_Wood_Window_Static",
 		"RwG_Wood_Window_TipUp_Static",
 		"RwG_Wood_Doorway_Static",
 		"RwG_Wood_Door_nLock_nWin_Static",
@@ -82,6 +85,7 @@ RwG Basebuilding 2.0 addon - https://steamcommunity.com/sharedfiles/filedetails/
 		//RwG
 		"RwG_ReInforced_Wall_Static",
 		"RwG_ReInforced_Window_TipUp_Static",
+		"RwG_ReInforced_Window_Static",
 		"RwG_ReInforced_Doorway_Static",
 		"RwG_ReInforced_Door_nLock_nWin_Static",
 		"RwG_ReInforced_Door_nLock_Win_Static",
@@ -94,12 +98,27 @@ RwG Basebuilding 2.0 addon - https://steamcommunity.com/sharedfiles/filedetails/
 
 	};
 	
+	UpgradeWithMetalGrid[] = 
+	{
+		"RwG_ReInforced_Window_Static"
+
+	};
+	
+	RemoveMetalGridKit[] = 
+	{
+		"RwG_ReInforced_Window_Grid_Static"
+	};
+	
 ## 3>> If you use Enhanced Movement i would blacklist the doors/Window and the woodgrid,
 otherwise you can open them with enhanced interaction or climb through the woodgrid element. 
 (Put it like in the example below to your initplayerlocal.sqf. 
 
 	EM_blacklist_obj =
 	[
+	    "Land_Mil_WiredFence_F",
+	    "Land_New_WireFence_5m_F",
+	    "Land_New_WireFence_10m_F",
 	    "RwG_WoodGrid_Wall_Static",
+	    "RwG_ReInforced_Window_Grid_Static",
 	    "RwG_GridWood_Door_Static"
 	];
