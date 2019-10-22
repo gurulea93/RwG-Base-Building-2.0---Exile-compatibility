@@ -1,5 +1,5 @@
 	
-# This addon is WIP so bugs can appear. 
+# This addon is WIP so bugs can appear. (DON'T USE IT ON LIVE SERVERS!)
 You can contact me on discord (AeoG | El'Rabito#5701)
 
 Feel free to contribute to make the code better (My skills are limited, so this is the best i could do).
