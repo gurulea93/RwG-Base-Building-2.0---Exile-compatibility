@@ -10,17 +10,16 @@
  * Exile & Base Building 2.0 compatibility by AeoG - El Rabito
  */
  
-private["_showUpgradeMenu", "_constructionConfigs", "_constructionConfig", "_upgradeObjectExile", "_upgradeObjectRWG"];
+private["_showUpgradeMenu", "_constructionConfigs", "_constructionConfig", "_upgradeObjectExile", "_upgradeObjectRWGPlanks", "_upgradeObjectRWGGrid" ];
 _showUpgradeMenu = false;
 _constructionConfigs = "(getText (_x >> 'staticObject')) isEqualTo (typeOf ExileClientInteractionObject)" configClasses (configFile >> "CfgConstruction");
-
-
 if !(_constructionConfigs isEqualTo []) then 
 {
 	_constructionConfig = _constructionConfigs select 0;
 	_upgradeObjectExile = getText (_constructionConfig >> "upgradeObject");
-	_upgradeObjectRWG = getText (_constructionConfig >> "upgradeObject_Wood");
-	_showUpgradeMenu = !(_upgradeObjectExile isEqualTo "") || !(_upgradeObjectRWG isEqualTo "");
+	_upgradeObjectRWGPlanks = getText (_constructionConfig >> "upgradeObject_Wood");
+	_upgradeObjectRWGGrid = getText (_constructionConfig >> "upgradeObject_Grid");
+	_showUpgradeMenu = !(_upgradeObjectExile isEqualTo "") || !(_upgradeObjectRWGPlanks isEqualTo "") || !(_upgradeObjectRWGGrid isEqualTo "");
 	_showUpgradeMenu = _showUpgradeMenu && (call ExileClient_util_world_isInOwnTerritory);
 };
  _showUpgradeMenu
