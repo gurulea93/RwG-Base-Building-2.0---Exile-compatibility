@@ -10,7 +10,7 @@
  * Exile & Base Building 2.0 compatibility by AeoG - El Rabito
  */
  
-private["_sessionID", "_parameters", "_object", "_playerObject", "_maxRange", "_flags", "_buildRights", "_lastAttackedAt", "_constructionBlockDuration", "_objectConfigE", "_objectConfigR", "_objectClassExile", "_objectClassRWG", "_position", "_vectorUp", "_vectorDir", "_objectDatabaseID", "_objectOwner", "_accessCode", "_UpgradeWithDefaultKit", "_newObject"];
+private["_sessionID", "_parameters", "_object", "_playerObject", "_maxRange", "_flags", "_buildRights", "_lastAttackedAt", "_constructionBlockDuration", "_objectConfigE", "_objectConfigR", "_objectConfigRG", "_objectClassExile", "_objectClassRWG", "_position", "_vectorUp", "_vectorDir", "_objectDatabaseID", "_objectOwner", "_accessCode", "_UpgradeWithDefaultKit", "_newObject"];
 _sessionID = _this select 0;
 _parameters = _this select 1;
 _object = _parameters select 0;
@@ -42,7 +42,7 @@ try
 			};
 		};
 	};
-	if !("RwG_Item_WoodPlanks_Upgrade" in (magazines _playerObject) || "Exile_Item_FortificationUpgrade" in (magazines _playerObject)) then 
+	if !("RwG_Item_WoodPlanks_Upgrade" in (magazines _playerObject) || "Exile_Item_FortificationUpgrade" in (magazines _playerObject) || "RwG_Item_MetalGrid_Upgrade" in (magazines _playerObject) ) then 
 	{
 		throw "Wrong or missing Upgrade-kit!";
 	};
@@ -74,6 +74,15 @@ try
  	configClasses 
  	(configFile >> 'CfgConstruction');
 	
+	_objectConfigRG =
+	"
+	isText(_x >> 'upgradeObject_Grid')
+ 	&& 
+ 	getText(_x >> 'staticObject') isEqualTo (typeOf _object)
+ 	"
+ 	configClasses 
+ 	(configFile >> 'CfgConstruction');
+	
 	if !(_objectConfigE isEqualTo [] || _objectConfigR isEqualTo []) then 
 	{
  		throw "Invalid Upgrade";
@@ -81,8 +90,10 @@ try
 
  	_objectConfigE = _objectConfigE select 0;
 	_objectConfigR = _objectConfigR select 0;
+	_objectConfigRG = _objectConfigRG select 0;
 	_objectClassExile = getText (_objectConfigE >> "upgradeObject");
 	_objectClassRWG = getText (_objectConfigR >> "upgradeObject_Wood");
+	_objectClassRWGG = getText (_objectConfigRG >> "upgradeObject_Grid");
 	_position = getPosATL _object;
  	_vectorUp = vectorUp _object;
  	_vectorDir = vectorDir _object;
@@ -94,6 +105,7 @@ try
 	};
  	_accessCode = _object getVariable ["ExileAccessCode","000000"];
 	_UpgradeWithDefaultKit = getArray(missionConfigFile >> "CfgTerritories" >> "UpgradeWithDefaultKit");
+	_UpgradeWithMetalGrid = getArray(missionConfigFile >> "CfgTerritories" >> "UpgradeWithMetalGrid");
 	
 	if ((typeOf _object) in _UpgradeWithDefaultKit) then
 	{
@@ -103,9 +115,23 @@ try
 	}
 	else
 	{
-		deleteVehicle _object;
-		format ["upgradeObject:%1:%2",_objectClassRWG,_objectDatabaseID] call ExileServer_system_database_query_fireAndForget;
-		_newObject = createVehicle [_objectClassRWG,_position,[],0,"CAN_COLLIDE"];
+	
+		if ((typeOf _object) in _UpgradeWithMetalGrid) then
+		{
+		
+			deleteVehicle _object;
+			format ["upgradeObject:%1:%2",_objectClassRWGG,_objectDatabaseID] call ExileServer_system_database_query_fireAndForget;
+			_newObject = createVehicle [_objectClassRWGG,_position,[],0,"CAN_COLLIDE"];
+		
+		}
+		else
+		{
+			deleteVehicle _object;
+			format ["upgradeObject:%1:%2",_objectClassRWG,_objectDatabaseID] call ExileServer_system_database_query_fireAndForget;
+			_newObject = createVehicle [_objectClassRWG,_position,[],0,"CAN_COLLIDE"];
+		
+		};
+		
 	};
 	
 	_newObject setVariable ["ExileDatabaseID",_objectDatabaseID];
