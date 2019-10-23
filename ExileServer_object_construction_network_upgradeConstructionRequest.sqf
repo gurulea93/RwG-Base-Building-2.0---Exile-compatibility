@@ -47,11 +47,6 @@ try
 		throw "Wrong or missing Upgrade-kit!";
 	};
 	
-	if !("Exile_Item_Hammer" in (magazines _playerObject)) then
-	{
-		throw "You need a hammer in your Inventory";
-	};
-	
 	if !(_object getVariable ["ExileConstructionDamage",0] isEqualTo 0)then
 	{
 		throw "Please repair the object first.";
@@ -106,9 +101,13 @@ try
  	_accessCode = _object getVariable ["ExileAccessCode","000000"];
 	_UpgradeWithDefaultKit = getArray(missionConfigFile >> "CfgTerritories" >> "UpgradeWithDefaultKit");
 	_UpgradeWithMetalGrid = getArray(missionConfigFile >> "CfgTerritories" >> "UpgradeWithMetalGrid");
-	
+
 	if ((typeOf _object) in _UpgradeWithDefaultKit) then
 	{
+		if !("Exile_Item_Hammer" in (magazines _playerObject)) then
+		{
+		throw "You need a Hammer in your Inventory";
+		};
 		deleteVehicle _object;
 		format ["upgradeObject:%1:%2",_objectClassExile,_objectDatabaseID] call ExileServer_system_database_query_fireAndForget;
 		_newObject = createVehicle [_objectClassExile,_position,[],0,"CAN_COLLIDE"];
@@ -119,6 +118,10 @@ try
 		if ((typeOf _object) in _UpgradeWithMetalGrid) then
 		{
 		
+			if !("RwG_Item_Blowtorch" in (magazines _playerObject)) then
+			{
+				throw "You need a Blowtorch in your Inventory";
+			};
 			deleteVehicle _object;
 			format ["upgradeObject:%1:%2",_objectClassRWGG,_objectDatabaseID] call ExileServer_system_database_query_fireAndForget;
 			_newObject = createVehicle [_objectClassRWGG,_position,[],0,"CAN_COLLIDE"];
@@ -126,6 +129,11 @@ try
 		}
 		else
 		{
+		
+			if !("Exile_Item_Hammer" in (magazines _playerObject)) then
+			{
+			throw "You need a Hammer in your Inventory";
+			};
 			deleteVehicle _object;
 			format ["upgradeObject:%1:%2",_objectClassRWG,_objectDatabaseID] call ExileServer_system_database_query_fireAndForget;
 			_newObject = createVehicle [_objectClassRWG,_position,[],0,"CAN_COLLIDE"];
