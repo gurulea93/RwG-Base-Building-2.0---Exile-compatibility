@@ -10,7 +10,7 @@
  * Exile & Base Building 2.0 compatibility by AeoG - El Rabito
  */
  
-private["_sessionID", "_parameters", "_object", "_playerObject", "_maxRange", "_flags", "_buildRights", "_lastAttackedAt", "_constructionBlockDuration", "_objectConfigE", "_objectConfigR", "_objectConfigRG", "_objectClassExile", "_objectClassRWG", "_position", "_vectorUp", "_vectorDir", "_objectDatabaseID", "_objectOwner", "_accessCode", "_UpgradeWithDefaultKit", "_newObject"];
+private["_sessionID", "_parameters", "_object", "_playerObject", "_maxRange", "_flags", "_buildRights", "_lastAttackedAt", "_constructionBlockDuration", "_objectConfigE", "_objectConfigR", "_objectConfigRG", "_objectClassExile", "_objectClassRWG", "_objectClassRWGG", "_position", "_vectorUp", "_vectorDir", "_objectDatabaseID", "_objectOwner", "_accessCode", "_UpgradeWithDefaultKit", "_UpgradeWithMetalGrid", "_newObject"];
 _sessionID = _this select 0;
 _parameters = _this select 1;
 _object = _parameters select 0;
@@ -78,7 +78,7 @@ try
  	configClasses 
  	(configFile >> 'CfgConstruction');
 	
-	if !(_objectConfigE isEqualTo [] || _objectConfigR isEqualTo []) then 
+	if !(_objectConfigE isEqualTo [] || _objectConfigR isEqualTo [] || _objectConfigRG isEqualTo []) then 
 	{
  		throw "Invalid Upgrade";
 	};
