@@ -109,13 +109,21 @@ RwG Basebuilding 2.0 addon - https://steamcommunity.com/sharedfiles/filedetails/
 	
 	UpgradeWithMetalGrid[] = 
 	{
-		"RwG_ReInforced_Window_Static"
+		"RwG_ReInforced_Window_Static",
+		"RwG_WoodGrid_Wall_Frame_Static",
+		"RwG_WoodGrid_Doorway_Frame_Static",
+		"RwG_WoodGrid_Doorway_Static",
+		"RwG_Grid_DoorWay_Static"
 
 	};
 	
 	RemoveMetalGridKit[] = 
 	{
-		"RwG_ReInforced_Window_Grid_Static"
+		"RwG_ReInforced_Window_Grid_Static",
+		"RwG_WoodGrid_Wall_Static",
+		"RwG_WoodGrid_Doorway_Static",
+		"RwG_Grid_Door_Static"
+
 	};
 	
 ## 3>> If you use Enhanced Movement i would blacklist the doors/Window and the woodgrid,
