@@ -133,11 +133,12 @@ otherwise you can open them with Enhanced Interaction or climb through the grid 
 
 	EM_blacklist_obj =
 	[
-	    "RwG_WoodGrid_Wall_Static",
-	    "RwG_Wood_Window_Grid_Static",
-	    "RwG_ReInforced_Window_Grid_Static",
-    	    "RwG_GridWood_Door_Static",
-	    "RwG_Grid_Wall_Static",
-	    "RwG_WoodGrid_Doorway_Static",
-	    "RwG_WoodGrid_Door_Static"
+		"RwG_WoodGrid_Wall_Static",
+		"RwG_Wood_Window_Grid_Static",
+		"RwG_ReInforced_Window_Grid_Static",
+	    	"RwG_GridWood_Door_Static",
+		"RwG_Grid_Wall_Static",
+		"RwG_WoodGrid_Doorway_Static",
+		"RwG_WoodGrid_Door_Static"
+	
 	];
